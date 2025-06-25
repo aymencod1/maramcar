@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #040608;
+    --secondary-color: #e74c3c;
+    --accent-color: #3498db;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    padding-top: 80px;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    background: var(--secondary-color);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+.footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 40px 0;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 40px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
+.img-thumbnail {
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.list-group-item-action {
+    transition: all 0.3s;
+}
+
+.list-group-item-action:hover {
+    background: var(--primary-color);
+    color: white !important;
+}
+.fa-user-circle {
+    transition: transform 0.3s;
+}
+
+.fa-user-circle:hover {
+    transform: scale(1.1);
+    color: var(--secondary-color);
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-img {
+    height: 80px; 
+    margin-right: 60px; 
+
+}
